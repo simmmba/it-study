@@ -1,2 +1,2 @@
 # IT_Study
-IT 면접, 인적성 스터디
+IT 관련 스터디 repository
