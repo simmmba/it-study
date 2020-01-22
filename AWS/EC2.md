@@ -38,3 +38,7 @@
 
 
 
+![EC2](https://github.com/simmmba/IT_Study/blob/master/images/EC2.jpg?raw=true)
+
+
+
