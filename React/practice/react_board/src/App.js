@@ -7,33 +7,18 @@ import Profiles from './pages/Profiles';
 import HistorySample from './sample/HistorySample';
 import Board_detail from './pages/Board_detail';
 import Board from './pages/Board';
+import Board_add from './pages/Board_add';
 
 const App = () => {
   return (
     <>
-      <ul>
-        <li>
-          <Link to="/">홈</Link>
-        </li>
-        <li>
-          <Link to="/about">소개</Link>
-        </li>
-        <li>
-          <Link to="/profile/seowon">서원 프로필</Link>
-        </li>
-        <li>
-          <Link to="/profile/seongho">성호 프로필</Link>
-        </li>
-        <li>
-          <Link to="/profiles">전체 프로필</Link>
-        </li>
-        <li>
-          <Link to="/history">History test</Link>
-        </li>
-        <li>
-          <Link to="/board">게시판</Link>
-        </li>
-      </ul>
+      <Link to="/">홈</Link> &nbsp;&nbsp;&nbsp;
+      <Link to="/about">소개</Link> &nbsp;&nbsp;&nbsp;
+      <Link to="/profile/seowon">서원 프로필</Link> &nbsp;&nbsp;&nbsp;
+      <Link to="/profile/seongho">성호 프로필</Link> &nbsp;&nbsp;&nbsp;
+      <Link to="/profiles">전체 프로필</Link> &nbsp;&nbsp;&nbsp;
+      <Link to="/history">History test</Link> &nbsp;&nbsp;&nbsp;
+      <Link to="/board">게시판</Link>
 
       <hr />
 
@@ -45,6 +30,7 @@ const App = () => {
         <Route path="/history" component={HistorySample} />
         <Route path="/board" component={Board} exact />
         <Route path= "/board/:bno" component={Board_detail} />
+        <Route path= "/newBoard" component={Board_add} />
 
         {/* Path를 따로 정의하지 않으면 모든 상황에 렌더링됨 */}
         <Route
