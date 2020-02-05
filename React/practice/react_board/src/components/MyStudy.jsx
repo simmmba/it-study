@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import StudyList from './StudyList';
 
-const FamousStudy = () => {
+const MyStudy = () => {
     
-    const famousList = [
+    const myList = [
         {
             lno: 1,
             ltype: '면접',
@@ -11,8 +11,8 @@ const FamousStudy = () => {
         },
         {
             lno: 2,
-            ltype: '기업분석',
-            lname: '엔테크 인턴 스터디'
+            ltype: '인적성',
+            lname: 'GSAT 스터디'
         },
         {
             lno: 3,
@@ -23,24 +23,19 @@ const FamousStudy = () => {
             lno: 4,
             ltype: '면접',
             lname: 'SK C&C 임원 면접 대비'
-        },
-        {
-            lno: 5,
-            ltype: '어학',
-            lname: '오픽 스터디'
         }
     ];
-    
-    const [list, setList] = useState(famousList);
+
+    const [list, setList] = useState(myList);
 
     return (
         <div className="listBox">
             <div className="listTitle">
-                인기 있는 스터디
+                내가 진행중인 스터디
             </div>
             <StudyList list={list}/>
         </div>
     );
 }
 
-export default FamousStudy;
+export default MyStudy;

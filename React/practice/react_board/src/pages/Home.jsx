@@ -1,35 +1,11 @@
 import React, { useState } from 'react';
 import Slider from 'infinite-react-carousel';
-import FamousStudy from '../components/FamousStudy';
+import MyStudy from '../components/MyStudy';
 import RecentStudy from '../components/RecentStudy';
-// import styles from '../css/HomeStudyList.css';
+import FamousStudy from '../components/FamousStudy';
+import styles from '../css/CSSModule.module.css';
 
 const Home = () => {
-
-    const famousList = [
-        {
-            fno: 1,
-            fname: '삼성 면접 스터디'
-        },
-        {
-            fno: 2,
-            fname: '인적성 스터디'
-        }
-    ];
-
-    const recentList = [
-        {
-            rno: 1,
-            rname: '삼성 면접 스터디'
-        },
-        {
-            fno: 2,
-            rname: '인적성 스터디'
-        }
-    ];
-
-    const [famous, setFamous] = useState(famousList);
-    const [recent, setRecent] = useState(recentList);
 
     return (
         <>
@@ -45,14 +21,12 @@ const Home = () => {
                 </div>
             </Slider>
 
-            <div style={styles.container}>
-                <div className={styles.item1}>
-                    <FamousStudy famous={famous} />
-                </div>
+            <br /><br />
 
-                <div className={styles.item2}>
-                    <RecentStudy recent={recent} />
-                </div>
+            <div className="studyList">
+                <MyStudy />
+                <RecentStudy />
+                <FamousStudy />
             </div>
         </>
     );
