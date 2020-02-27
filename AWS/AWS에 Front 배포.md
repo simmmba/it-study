@@ -38,3 +38,9 @@ try_files $uri $uri/ /index.html;
 #### 3. `sudo service nginx start` 로 nginx 시작
 
 #### 4. `sudo service nginx stop` 로 nginx 종료
+
+
+
+cf) `sudo rm -r (폴더명)` => 폴더 삭제
+
+​	 `sudo cp -r (폴더명) (복사하려는위치)` => 폴더 복사
